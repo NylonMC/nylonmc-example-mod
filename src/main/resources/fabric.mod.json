@@ -19,17 +19,18 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      {
+        "adapter": "python",
+        "value": "modid.common"
+      }
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
 
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.16.x",
+    "nylonmc-core": "*"
   },
   "suggests": {
     "flamingo": "*"
